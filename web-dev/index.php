@@ -40,6 +40,8 @@ $stmt->execute();
 		?>
 		<p>name: <?php echo($row["name"]) ?></p>
 		<p>content: <?php echo($row["content"]) ?></p>
+		<!-- <p>YourName: <?php echo($row["yourName"]) ?></p>  -->
+
 	<?php } ?>
 	</div>
 
