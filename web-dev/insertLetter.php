@@ -10,7 +10,8 @@ $dbpassword = "nhXZ9reEzWuQ";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
-$stmt = $pdo->prepare("INSERT INTO `letters` (`id`, `name`,`content`) VALUES (NULL,'$name','$content'); ");
+$stmt = $pdo->prepare("INSERT INTO `letters` (`id`, `name`,`content`)
+                        VALUES (NULL,'$name','$content'); ");
 
 $stmt->execute();
 ?>
