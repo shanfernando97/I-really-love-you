@@ -17,11 +17,15 @@
   		<img src=""/>
   	</header>
 
-    <form action="" method="POST">
-  		Dear, <input id="nameInput" type="text" name="name" placeholder="White his/her name" required /><br>
-  		<input id="letterInput" type="text" placeholder="Your love letter" name="content" required/><br>
-  		<input type="submit" id="insertBtn">
+    <form id="letter">
+  		<fieldset>
+        Dear, <input id="name" type="text" name="name" placeholder="Their name" required /><br>
+    		<!-- <input id="content" type="textbox" name="content" placeholder="Your love letter" required/><br> -->
+        <textarea id="content" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
+        <input type="submit" id="insertBtn" value="Post">
+      </fieldset>
   	</form>
+
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
   </body>
-  <script src="main.js" charset="utf-8"></script>
 </html>
