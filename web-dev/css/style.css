@@ -1,0 +1,84 @@
+body {
+  		background-image: url("../image/bg.jpg");
+			background-size: 100%;
+	}
+
+
+	.navbar{
+		background-color:#343641;
+		width:100%;
+	}
+
+	.btn-outline-primary {
+ 	 	background-color: #dfc277;
+  		color:#343641;
+  		border: 3px solid #6990a2;
+  		border-radius: 12px;
+
+	}
+	.btn{font-weight:bold;}
+
+	.btn-outline-primary:hover {
+ 	 	background-color:#6990a2;
+ 	 	border: 3px solid #6990a2;
+	}
+
+	.nav-item{
+		margin-left:10px;
+	}
+
+//index
+
+
+	.navbar{
+		background-color:#343641;
+		width:100%;
+	}
+
+	.btn-outline-primary {
+ 	 	background-color: #dfc277;
+  		color:#343641;
+  		border: 3px solid #6990a2;
+  		border-radius: 12px;
+
+	}
+	.btn{font-weight:bold;}
+
+	.btn-outline-primary:hover {
+ 	 	background-color:#6990a2;
+ 	 	border: 3px solid #6990a2;
+	}
+
+	.nav-item{
+		margin-left:10px;
+	}
+
+
+//write
+
+
+
+
+
+
+  .boy-image{
+    width:300px;
+  }
+
+  form{
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+
+  .boy-image{
+    margin-left: 60%;
+  }
+
+  .love-image{
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: -10%;
+  }
+
+
+//wonder php
