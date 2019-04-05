@@ -36,6 +36,26 @@
   .nav-item{
     margin-left:10px;
   }
+
+  .boy-image{
+    width:300px;
+  }
+
+  form{
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+
+  .boy-image{
+    margin-left: 60%;
+  }
+
+  .love-image{
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: -10%;
+  }
+
 </style>
   <body>
     <header>
@@ -49,16 +69,23 @@
       <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="index.php">Fun Stuff</a></li>
     </ul>
     </nav>
+    <img class="header-image"src="image/header.svg" width="100%" height="100%" alt="header">
+     <img class="love-image"src="image/titledark.png" width="60%" alt="love you">
   </header>
 
     <form id="letter">
+
   		<fieldset>
         Dear, <input id="name" type="text" name="name" placeholder="Their name" required /><br>
     		<!-- <input id="content" type="textbox" name="content" placeholder="Your love letter" required/><br> -->
         <textarea id="content" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
         <input type="submit" id="insertBtn" value="Post">
       </fieldset>
+      <img class="boy-image"src="image/boy.svg" width="100%" height="100%" alt="boy">
   	</form>
+   
+    
+    
 
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
   </body>
