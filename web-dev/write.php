@@ -13,19 +13,43 @@
       background-image: url("image/bg.jpg");
       background-size: 100%;
   }
+
+  .navbar{
+    background-color:#343641;
+    width:100%;
+  }
+
+  .btn-outline-primary {
+    background-color: #dfc277;
+      color:#343641;
+      border: 3px solid #6990a2; 
+      border-radius: 12px;
+      
+  }
+  .btn{font-weight:bold;}
+
+  .btn-outline-primary:hover {
+    background-color:#6990a2;
+    border: 3px solid #6990a2; 
+  }
+
+  .nav-item{
+    margin-left:10px;
+  }
 </style>
   <body>
     <header>
-  		<h2>I Love You</h2>
-  		<nav>
-  		<ul>
-  			<li><a href="index.php">Home</a></li>
-  			<li><a href="write.php">Write</a></li>
-  			<li><a href="wonder.php">Wonder</a></li>
-  		</ul>
-  		</nav>
-  		<img src=""/>
-  	</header>
+    <nav  class="navbar navbar-light ">
+      <a class="navbar-brand" href="write.php">
+        <img src="image/titlewithe.png" width="70" height="40" alt="I really love you">
+      </a>
+    <ul class="nav justify-content-end">
+      <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="write.php">Write</a></li>
+      <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="wonder.php">Wonder</a></li>
+      <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="index.php">Fun Stuff</a></li>
+    </ul>
+    </nav>
+  </header>
 
     <form id="letter">
   		<fieldset>
