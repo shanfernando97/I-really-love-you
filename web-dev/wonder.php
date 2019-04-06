@@ -22,11 +22,13 @@
 		</ul>
 		</nav>
 	</header>
-
+	
+	<img class="serch-image"src="image/search.svg" width="50%" alt="search">
 	<form action="search.php" method="POST">
-		Is <input type="text" name="search" placeholder="White his/her name" required /> loved?
-		<input type="submit" name="" value="Find out">
+		<input type="text" name="search" placeholder="White his/her name" required />
+		<input type="submit" name="" id ="insertBtn" value="Find out">
 	</form>
+	
 </body>
 <!-- <script src="main.js" charset="utf-8"></script> -->
 </html>
