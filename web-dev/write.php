@@ -11,7 +11,9 @@
   </head>
 
   <body>
+    <div style=" width:1200px;margin:auto">
     <header>
+
     <nav  class="navbar navbar-light ">
       <a class="navbar-brand" href="write.php">
         <img src="image/titlewithe.png" width="70" height="40" alt="I really love you">
@@ -41,5 +43,6 @@
 
 
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
+  </div>
   </body>
 </html>

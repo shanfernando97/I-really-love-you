@@ -56,22 +56,24 @@ body {
 
 //write
 
-
+  .header-image{
+		margin-left: auto;
+    margin-right: auto;
+    display: table;
+	}
 
 
 
 
   .boy-image{
     width:300px;
+		margin-left: 60%;
   }
 
   form{
-    margin-right: 25%;
-    margin-left: 25%;
-  }
-
-  .boy-image{
-    margin-left: 60%;
+		margin-left: auto;
+    margin-right: auto;
+    display: table;
   }
 
   .love-image{
