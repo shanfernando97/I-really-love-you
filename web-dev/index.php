@@ -57,6 +57,7 @@ $stmt->execute();
 		?>
 		<p>name: <?php echo($row["name"]) ?></p>
 		<p>content: <?php echo($row["content"]) ?></p>
+		<p>from: <?php echo($row["fromName"]) ?></p>
 
 	<?php } ?>
 	</div>

@@ -35,11 +35,12 @@
 
     <form id="letter">
   		<fieldset class="form-group">
-        Hey, <input id="name exampleFormControlTextarea1" type="text" name="name" placeholder="write his/her name" required /><br>
+        Hey, <input id="name" class="exampleFormControlTextarea1" type="text" name="name" placeholder="write his/her name" required /><br>
         I really wanna tell you that<br>
     		<!-- <input id="content" type="textbox" name="content" placeholder="Your love letter" required/><br> -->
-        <textarea class="form-control" id="content exampleFormControlTextarea1" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
-        <input type="submit"  class="btn insertBtn" value="Post">
+        <textarea class="form-control exampleFormControlTextarea1" id="content" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
+        Sincerely, <input id="fromName" class="exampleFormControlTextarea1" type="text" name="fromName" placeholder="Write your name (optional)"/>
+        <input id="insert" type="submit"  class="btn insertBtn" value="Post">
       </fieldset>
   	</form>
     <img class="boy-image"src="image/boy.svg"  alt="boy">
@@ -47,7 +48,7 @@
 
 
 
-    <script src="insert.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/insert.js" type="text/javascript" charset="utf-8"></script>
   </div>
   </body>
 </html>
