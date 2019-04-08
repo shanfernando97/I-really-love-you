@@ -39,7 +39,7 @@
         I really wanna tell you that<br>
     		<!-- <input id="content" type="textbox" name="content" placeholder="Your love letter" required/><br> -->
         <textarea class="form-control" id="content exampleFormControlTextarea1" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
-        <input type="submit" id="insertBtn" class="btn" value="Post">
+        <input type="submit"  class="btn insertBtn" value="Post">
       </fieldset>
   	</form>
     <img class="boy-image"src="image/boy.svg"  alt="boy">

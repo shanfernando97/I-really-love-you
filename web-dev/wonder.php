@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" media="screen and (max-width: 640px)" href="css/small.css" />
+	<link rel="stylesheet" media="screen and (max-width: 640px)" href="css/small.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -31,12 +32,16 @@
 		<img class="header-image"src="image/header.svg"  alt="header">
 		<img class="love-image"src="image/titledark.png" width="50%" alt="love you">
 	</header>
-
-	<img class="serch-image"src="image/search.svg" width="50%" alt="search">
-	<form action="search.php" method="POST">
-		<input type="text" name="search" placeholder="White his/her name" required />
-		<input type="submit" name="" id ="insertBtn" value="Find out">
+    <div class="searchImg">
+	<!-- <img class="serch-image"src="image/search.svg" width="50%" alt="search"> -->
+	<form class = "wonderform" action="search.php" method="POST">
+		<input id = "searchname" type="text" name="search" placeholder="White his/her name" required />
+		<!-- <input id = "submitbutton" class="btn insertBtn" type="submit" name=""  value="Find out"> -->
 	</form>
+	
+</div>
+		<input id = "submitbutton" class="btn insertBtn" type="submit" name=""  value="Find out">
+
 
 </body>
 <!-- <script src="main.js" charset="utf-8"></script> -->

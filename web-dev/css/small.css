@@ -1,11 +1,35 @@
-@media only screen and (max-width: 600px) {
- 
+/*@media only screen and (max-width: 600px) {*/
+
+ /*write*/
 .boy-image{
     width: 150px;
 	margin-left: 58%;
-	margin-top: -640px;
+	margin-top: -540px;
+  }
+
+  .love-image{
+    margin-top: -15%;
+  }
+
+  textarea{
+  	height: 300px!important;
+  }
+
+
+  /*wonder*/
+  .serch-image{
+  	width:80%;
+  }
+
+  #insertBtn{
+    float: center;
   }
 
   
 
-}
+  .place-input{
+  	margin-top: -100%;
+  }
+
+
+/*}*/
