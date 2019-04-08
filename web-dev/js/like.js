@@ -1,8 +1,12 @@
 console.log("js connected");
 
+var liked = false;
+var pooped = false;
+
 var likeButton = document.getElementById('like');
 likeButton.addEventListener("click",likeFunction,false);
 function likeFunction(){
+  pressed = true;
   var myRequest = new XMLHttpRequest;
 	myRequest.onreadystatechange = function(){
   if(myRequest.readyState === 4){
@@ -19,11 +23,9 @@ function likeFunction(){
   myRequest.send("letterID="+letterID+"&likes="+likes);
 
   var like = document.getElementById("like");
-  var numLikes = document.getElementById("numLikes").innerHTML;
   //console.log(like.src);
   like.src = "image/like2.svg";
-  numLikes = likes;
-  console.log(numLikes);
+  document.getElementById("numLikes").innerHTML = parseInt(likes)+1;
 
 }
 
@@ -49,5 +51,5 @@ function poopFunction(){
   var numPoops = document.getElementById("numPoops");
 
   poop.src = "image/poop2.svg";
-  numPoops = numPoops;
+  document.getElementById("numPoops").innerHTML = parseInt(poops)+1;
 }
