@@ -119,6 +119,8 @@ body {
 
   .insertBtn:hover{
   	background-color: #343641;
+   
+    color:#ffffff;
   }
 
   textarea{
@@ -173,16 +175,17 @@ body {
   display: table;
   float: inherit;
   top: 110%;
-
   width: 150px;
 
 }
+
 .searchImg{
   position: relative;
-  background-image: url("../image/search.svg");
+  background-image: url("../image/search.svg"),
+                    url("../image/girl.svg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 110% 110%;
+  background-position: center top, 450px 30px;
+  background-size: 110% 110%, 110% 110%;
 
   /*position: center center !important;*/
 }
