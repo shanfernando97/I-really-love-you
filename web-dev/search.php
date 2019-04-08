@@ -74,19 +74,21 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		  <?php
 		  while($row=$stmt3->fetch()) {
 		  ?>
-			<div class="letter">
+			<div class="letter" id="letter-stats" data-id="<?php echo($row["id"]) ?>">
 				<p>Dear, <?php echo($row["name"]) ?></p>
 			  <p><?php echo($row["content"]) ?></p>
 				<p>From, <?php echo($row["fromName"]) ?></p>
-				<div class="letter-stats">
-					<input id="letterID" type="number" name="letterID" value="<?php echo($row["id"]) ?>" hidden=true>
-					<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
-					<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
-					<img id="like"src="image/like1.svg" alt="like">
-					<p id="numLikes"><?php echo($row["likes"]) ?></p>
-					<img id="poop"src="image/poop1.svg" alt="poop">
-					<p id="numPoops"><?php echo($row["poop"]) ?></p>
-				</div>
+				<a href="search.php?letterID=<?php echo($row["id"]) ?>">aasas</a>
+					<div class="letter-stats">
+						<input id="letterID" type="number" name="letterID" value="<?php echo($row["id"]) ?>" hidden=true>
+						<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
+						<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
+
+						<input id="like" type="image" src="image/like1.svg">
+						<p id="numLikes"><?php echo($row["likes"]) ?></p>
+						<input id="poop" type="image" src="image/poop1.svg">
+						<p id="numPoops"><?php echo($row["poop"]) ?></p>
+					</div>
 			<?php } ?>
 			</div>
 		</div>
