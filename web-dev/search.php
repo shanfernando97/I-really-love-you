@@ -17,8 +17,6 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
   $stmt->execute();
   $stmt2->execute();
   $stmt3->execute();
-
-	$stmt4 = $pdo->prepare("SELECT COUNT(`name`) FROM `letters` WHERE `name` LIKE '%$search%'");
 ?>
 
 <!DOCTYPE html>
