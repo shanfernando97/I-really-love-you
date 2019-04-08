@@ -156,20 +156,25 @@ body {
   display: block;
  /* margin-top: 4%;
   margin-left: -5%;*/
-  width: 250px;
+  width: 270px;
   height: 60px;
-  top: 15%;
+  top: 18%;
   left: 50%
 
   ;
 }
 
 #submitbutton{
+  
+  position:absolute;
+  display: block;
   margin-right: auto;
   margin-left: auto;
   display: table;
   float: inherit;
-  width: 15%;
+  top: 120%;
+  
+  width: 150px;
   
 }
 .searchImg{
@@ -177,7 +182,7 @@ body {
   background-image: url("../image/search.svg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 90% 90%;
+  background-size: 110% 110%;
 
   /*position: center center !important;*/
 }

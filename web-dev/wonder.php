@@ -37,10 +37,11 @@
 	<form class = "wonderform" action="search.php" method="POST">
 		<input id = "searchname" type="text" name="search" placeholder="White his/her name" required />
 		<!-- <input id = "submitbutton" class="btn insertBtn" type="submit" name=""  value="Find out"> -->
+		<input id = "submitbutton" class="btn insertBtn" type="submit" name=""  value="Find out">
 	</form>
 	
 </div>
-		<input id = "submitbutton" class="btn insertBtn" type="submit" name=""  value="Find out">
+		
 
 
 </body>
