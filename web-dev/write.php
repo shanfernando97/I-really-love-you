@@ -27,13 +27,13 @@
       <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="index.php">Fun Stuff</a></li>
     </ul>
     </nav>
-    <img class="header-image"src="image/header.svg"  alt="header">
+    <img class="header-image"src="image/header.svg" width="100%" alt="header">
     <img class="love-image"src="image/titledark.png" width="50%" alt="love you">
   </header>
 
     <form id="letter">
   		<fieldset class="form-group">
-        Hey, <input id="name" type="text" name="name" placeholder="write his/her name" required /><br>
+        Hey, <input id="name exampleFormControlTextarea1" type="text" name="name" placeholder="write his/her name" required /><br>
         I really wanna tell you that<br>
     		<!-- <input id="content" type="textbox" name="content" placeholder="Your love letter" required/><br> -->
         <textarea class="form-control" id="content exampleFormControlTextarea1" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
