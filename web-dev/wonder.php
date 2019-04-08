@@ -24,6 +24,8 @@
 			<li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="index.php">Fun Stuff</a></li>
 		</ul>
 		</nav>
+		<img class="header-image"src="image/header.svg"  alt="header">
+		<img class="love-image"src="image/titledark.png" width="50%" alt="love you">
 	</header>
 
 	<img class="serch-image"src="image/search.svg" width="50%" alt="search">
