@@ -22,10 +22,14 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>search page</title>
 	<link rel="icon" href="image/favicon.ico" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 640px)" href="css/small.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -49,6 +53,10 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<img class="header-image"src="image/header.svg"  alt="header">
 		<img class="love-image"src="image/titledark.png" width="50%" alt="love you">
 	</header>
+
+<div id="yearesult">
+
+
 <section>
 
 	<img class="yea" src="image/yea.svg" alt="yes" >
@@ -65,5 +73,6 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
   <p>content: <?php echo($row["content"]) ?></p>
 <?php } ?>
 </section>
+</div>
 </body>
 </html>
