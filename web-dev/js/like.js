@@ -17,6 +17,14 @@ function likeFunction(){
   myRequest.open("POST", "like.php", true); //true means it is asynchronous // Send urls through the url
   myRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   myRequest.send("letterID="+letterID+"&likes="+likes);
+
+  var like = document.getElementById("like");
+  var numLikes = document.getElementById("numLikes").innerHTML;
+  //console.log(like.src);
+  like.src = "image/like2.svg";
+  numLikes = likes;
+  console.log(numLikes);
+
 }
 
 var poopButton = document.getElementById('poop');
@@ -36,4 +44,10 @@ function poopFunction(){
   myRequest.open("POST", "poop.php", true); //true means it is asynchronous // Send urls through the url
   myRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   myRequest.send("letterID="+letterID+"&poops="+poops);
+
+  var poop = document.getElementById("poop");
+  var numPoops = document.getElementById("numPoops");
+
+  poop.src = "image/poop2.svg";
+  numPoops = numPoops;
 }

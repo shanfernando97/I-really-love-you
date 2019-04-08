@@ -82,8 +82,10 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 					<input id="letterID" type="number" name="letterID" value="<?php echo($row["id"]) ?>" hidden=true>
 					<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
 					<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
-					<p><img id="like"src="image/like1.svg" alt="like"> <?php echo($row["likes"]) ?></p>
-					<p><img id="poop"src="image/poop1.svg" alt="poop"> <?php echo($row["poop"]) ?></p>
+					<img id="like"src="image/like1.svg" alt="like">
+					<p id="numLikes"><?php echo($row["likes"]) ?></p>
+					<img id="poop"src="image/poop1.svg" alt="poop">
+					<p id="numPoops"><?php echo($row["poop"]) ?></p>
 				</div>
 			<?php } ?>
 			</div>
