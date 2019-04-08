@@ -47,7 +47,7 @@
 
 
 
-    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="insert.js" type="text/javascript" charset="utf-8"></script>
   </div>
   </body>
 </html>

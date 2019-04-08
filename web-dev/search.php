@@ -77,9 +77,11 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 			<div class="letter">
 				<p>Dear, <?php echo($row["name"]) ?></p>
 			  <p><?php echo($row["content"]) ?></p>
-				<p><?php echo($row["fromName"]) ?></p>
+				<p>From, <?php echo($row["fromName"]) ?></p>
 				<div class="letter-stats">
-					<p id="letterID" hidden="true"><?php echo($row["id"]) ?></p>
+					<input id="letterID" type="number" name="letterID" value="<?php echo($row["id"]) ?>" hidden=true>
+					<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
+					<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
 					<p><img id="like"src="image/like1.svg" alt="like"> <?php echo($row["likes"]) ?></p>
 					<p><img id="poop"src="image/poop1.svg" alt="poop"> <?php echo($row["poop"]) ?></p>
 				</div>
@@ -87,5 +89,6 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 			</div>
 		</div>
 </div>
+<script src="js/like.js" charset="utf-8"></script>
 </body>
 </html>
