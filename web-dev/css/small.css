@@ -21,15 +21,41 @@
   	width:80%;
   }
 
-  #insertBtn{
-    float: center;
+  /*#insertBtn{
+  	float: inherit;
+  	margin-right: auto;
+    margin-left: auto;
+
   }
+*/
 
-  
+.wonderform{
+  padding-top: 0em;
+  padding-bottom: 22em;
+}
+  #searchname{
+  float: inherit;
+  width: 200px;
+  height: 40px;
+  top: 10%;
+  left: 30%;
+}
 
-  .place-input{
+  /*#submitbutton{
+
+  position:absolute;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  float: inherit;
+  top: 110%;
+  width: 150px;
+
+}*/
+
+  /*.place-input{
   	margin-top: -100%;
-  }
+  }*/
 
 
 /*}*/
