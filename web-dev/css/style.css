@@ -2,8 +2,6 @@ body {
   		background-image: url("../image/bg.jpg");
 			background-size: 100%;
       font-family: 'Roboto Slab', serif;
-      font-weight:bold;
-      font-size: 1.5em;
 	}
 
 
@@ -40,9 +38,9 @@ body {
 
 	.btn-outline-primary {
  	 	background-color: #dfc277;
-  	color:#343641;
-  	border: 3px solid #6990a2;
-  	border-radius: 12px;
+  		color:#343641;
+  		border: 3px solid #6990a2;
+  		border-radius: 12px;
 
 	}
 	.btn{
@@ -72,9 +70,9 @@ body {
   .boy-image{
   	position:absolute;
     width:600px;
-	  margin-left: 60%;
+	  margin-left: 56%;
 	  margin-top: -450px;
-    /*height:auto;*/
+    height:auto;
 	  z-index: -1;
   }
 
@@ -85,10 +83,10 @@ body {
   }
 
   input[type=text] {
-   	padding:1.5% 2.5%;
- 	  margin: 0.5% 0;
+   	padding: 3% 5%;
+ 	  margin: 1% 0;
   	/*box-sizing: border-box;*/
-  	border: 4px solid #343641;
+  	border: 3px solid #343641;
   	/*-webkit-transition: 0.5s;*/
   	transition: 0.5s;
   	outline: none;
@@ -113,14 +111,14 @@ body {
   }
 
   textarea{
-   	padding: 12px 20px!important;
- 	  margin: 8px 0!important;
-  	box-sizing: border-box!important;
-  	border: 4px solid #343641!important;
-  	height: 400px!important;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%!important;
+   	padding: 12px 20px;
+ 	  margin: 8px 0;
+  	box-sizing: border-box;
+  	border: 3px solid #343641!important;
+  	-webkit-transition: 0.5s;
+  	transition: 0.5s;
+  	outline: none;
+  	height: auto!important;
   }
 
   .love-image{
@@ -132,11 +130,10 @@ body {
 
 /*wonder php*/
 
-<<<<<<< HEAD
 .serch-image{
 	margin-right: auto;
 	margin-left: auto;
-	display: table;
+	display: table; !important;
 }
 
 
@@ -146,7 +143,7 @@ img.yea{
   margin-right: auto;
 	margin-left: auto;
 	display: table;
-  width: 35%;
+  width: 50%;
 
 }
 
@@ -156,10 +153,8 @@ img.yea{
 	display: table;
 
 }
-=======
   .serch-image{
   	margin-right: auto;
   	margin-left: auto;
   	display: table;
   }
->>>>>>> 9db8b17250371f9186c0f1a9a796ca36a38e3078
