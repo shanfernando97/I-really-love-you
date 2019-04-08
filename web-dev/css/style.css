@@ -222,11 +222,12 @@ body {
   /* color: #ffffff; */
   background-image: url("../image/letterbg.svg");
   background-repeat: no-repeat;
+  background-size:contain;
 }
 
 .letter{
-  display: flex;
-  flex-direction: column;
-  background-image: url("../image/letterbg.svg");
-  background-repeat: no-repeat;
+
+}
+.letter .letter-stats{
+  width: 1.5%;
 }

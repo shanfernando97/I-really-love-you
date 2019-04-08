@@ -75,8 +75,14 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		  while($row=$stmt3->fetch()) {
 		  ?>
 			<div class="letter">
-				<p>name: <?php echo($row["name"]) ?></p>
-			  <p>content: <?php echo($row["content"]) ?></p>
+				<p>Dear, <?php echo($row["name"]) ?></p>
+			  <p><?php echo($row["content"]) ?></p>
+				<p><?php echo($row["fromName"]) ?></p>
+				<div class="letter-stats">
+					<p id="letterID" hidden="true"><?php echo($row["id"]) ?></p>
+					<p><img id="like"src="image/like1.svg" alt="like"> <?php echo($row["likes"]) ?></p>
+					<p><img id="poop"src="image/poop1.svg" alt="poop"> <?php echo($row["poop"]) ?></p>
+				</div>
 			<?php } ?>
 			</div>
 		</div>
