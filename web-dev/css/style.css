@@ -149,18 +149,22 @@ body {
 
 //search .php
 
-img.yea{
+
+
+#yearesult p{
   margin-right: auto;
 	margin-left: auto;
 	display: table;
-
 
 }
 
-#yearesult{
-  margin-right: auto;
-	margin-left: auto;
-	display: table;
+#yearesult img.yea{
+
+
+   width: 40%;
+   margin-right: auto;
+ 	margin-left: auto;
+ 	display: table;
 
 }
   .serch-image{

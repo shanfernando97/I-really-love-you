@@ -58,8 +58,11 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 
 <section>
+  <div class="">
+
 
 	<img class="yea" src="image/yea.svg" alt="yes" >
+	</div>
   <?php $count=$stmt2->fetch();
    $name=$stmt->fetch(); ?>
   <p>There is/are <h3><?php echo($count[0]) ?></h3> love letter(s) for <h3><?php echo($name["name"]) ?></h3></p>
