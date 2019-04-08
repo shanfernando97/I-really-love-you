@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Write a Love Letter</title>
     <link rel="icon" href="image/favicon.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,15 +32,15 @@
   </header>
 
     <form id="letter">
-  		<fieldset>
+  		<fieldset class="form-group">
         Hey, <input id="name" type="text" name="name" placeholder="write his/her name" required /><br>
         I really wanna tell you that<br>
     		<!-- <input id="content" type="textbox" name="content" placeholder="Your love letter" required/><br> -->
-        <textarea id="content" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
+        <textarea class="form-control" id="content exampleFormControlTextarea1" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
         <input type="submit" id="insertBtn" class="btn" value="Post">
       </fieldset>
   	</form>
-    <img class="boy-image"src="image/boy.svg" width="100%" height="100%" alt="boy">
+    <img class="boy-image"src="image/boy.svg"  alt="boy">
 
 
 
