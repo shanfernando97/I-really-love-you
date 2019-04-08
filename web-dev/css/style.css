@@ -190,10 +190,11 @@ body {
 
 
 
-#yearesult p{
-  margin-right: auto;
+#textresult{
+  /* margin-right: auto;
 	margin-left: auto;
-	display: table;
+	display: table; */
+  text-align: center; !important;
 
 }
 
@@ -211,3 +212,8 @@ body {
   	margin-left: auto;
   	display: table;
   }
+
+#letters{
+  color: #eda504;
+  /* background-image: url("../image/letterbg.svg") */
+}
