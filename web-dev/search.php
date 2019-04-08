@@ -58,13 +58,17 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 
 		<section>
-
-			<img class="yea" src="image/yea.svg" alt="yes" >
-
 		  <?php $count=$stmt2->fetch();
 		   $name=$stmt->fetch(); ?>
+			 <?php
+			 if ($count[0]==0) {
+			 	?><img class="yea" src="image/nah.svg" alt="nah" ><?php
+			} else {
+			 ?>
+			 <img class="yea" src="image/yea.svg" alt="yes" >
 		  <div id="textresult">There is/are <h3><?php echo($count[0]) ?></h3> love letter(s) for <h3><?php echo($name["name"]) ?></h3></div>
 		</section>
+	<?php } ?>
 
 		<div id="letters">
 		  <?php
