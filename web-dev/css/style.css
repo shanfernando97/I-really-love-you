@@ -95,7 +95,7 @@ body {
   input[type=text] {
    	padding: 1.5% 2.5%;
  	  margin: 0.5% 0;
-  
+
   	/*box-sizing: border-box;*/
   	border: 3px solid #343641;
   	/*-webkit-transition: 0.5s;*/
@@ -141,7 +141,7 @@ body {
 
 /*wonder php*/
 
-/*.serch-image{ 
+/*.serch-image{
 	margin-right: auto;
 	margin-left: auto;
 	display: table; !important;
@@ -165,7 +165,7 @@ body {
 }
 
 #submitbutton{
-  
+
   position:absolute;
   display: block;
   margin-right: auto;
@@ -173,9 +173,9 @@ body {
   display: table;
   float: inherit;
   top: 110%;
-  
+
   width: 150px;
-  
+
 }
 .searchImg{
   position: relative;
@@ -219,6 +219,7 @@ body {
   }
 
 #letters{
-  color: #eda504;
-  /* background-image: url("../image/letterbg.svg") */
+  /* color: #ffffff; */
+  background-image: url("../image/letterbg.svg");
+  background-repeat: no-repeat;
 }

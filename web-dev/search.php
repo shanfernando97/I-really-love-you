@@ -66,7 +66,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		  <div id="textresult">There is/are <h3><?php echo($count[0]) ?></h3> love letter(s) for <h3><?php echo($name["name"]) ?></h3></div>
 		</section>
 
-		<div id="letters" style="background-image:'<?php echo'url("image/letterbg.svg")' ?>'">
+		<div id="letters">
 		  <?php
 		  while($row=$stmt3->fetch()) {
 		  ?>
