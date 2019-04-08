@@ -50,13 +50,14 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<img class="love-image"src="image/titledark.png" width="50%" alt="love you">
 	</header>
 <section>
-  <h1>Aww, sure..</h1>
+
+	<img class="yea" src="image/yea.svg" alt="yes" >
   <?php $count=$stmt2->fetch();
    $name=$stmt->fetch(); ?>
   <p>There is/are <h3><?php echo($count[0]) ?></h3> love letter(s) for <h3><?php echo($name["name"]) ?></h3></p>
 </section>
 
-<section>
+<section class="letters">
   <?php
   while($row=$stmt3->fetch()) {
   ?>

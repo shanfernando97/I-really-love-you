@@ -130,8 +130,34 @@ body {
 
 /*wonder php*/
 
+<<<<<<< HEAD
+.serch-image{
+	margin-right: auto;
+	margin-left: auto;
+	display: table;
+}
+
+
+//search .php
+
+img.yea{
+  margin-right: auto;
+	margin-left: auto;
+	display: table;
+  width: 35%;
+
+}
+
+#yearesult{
+  margin-right: auto;
+	margin-left: auto;
+	display: table;
+
+}
+=======
   .serch-image{
   	margin-right: auto;
   	margin-left: auto;
   	display: table;
   }
+>>>>>>> 9db8b17250371f9186c0f1a9a796ca36a38e3078
