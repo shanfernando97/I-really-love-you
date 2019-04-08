@@ -23,7 +23,7 @@ body {
 
 	.btn-outline-primary:hover {
  	 	background-color:#6990a2;
- 	 	border: 3px solid #6990a2;
+ 	 	border: 4px solid #6990a2;
 	}
 
 	.nav-item{
@@ -41,7 +41,7 @@ body {
 	.btn-outline-primary {
  	 	background-color: #dfc277;
   		color:#343641;
-  		border: 3px solid #6990a2;
+  		border: 4px solid #6990a2;
   		border-radius: 12px;
 
 	}
@@ -51,7 +51,7 @@ body {
 
 	.btn-outline-primary:hover {
  	 	background-color:#6990a2;
- 	 	border: 3px solid #6990a2;
+ 	 	border: 4px solid #6990a2;
 	}
 
 	.nav-item{
@@ -63,7 +63,7 @@ body {
 
   fieldset{
     font-weight:bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .header-image{
