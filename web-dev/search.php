@@ -35,6 +35,20 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 </head>
 
 <body>
+	<header>
+		<nav  class="navbar navbar-light ">
+  		<a class="navbar-brand" href="write.php">
+  			<img src="image/titlewithe.png" width="70" height="40" alt="I really love you">
+  		</a>
+		<ul class="nav justify-content-end">
+			<li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="write.php">Write</a></li>
+			<li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="wonder.php">Wonder</a></li>
+			<li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="index.php">Fun Stuff</a></li>
+		</ul>
+		</nav>
+		<img class="header-image"src="image/header.svg"  alt="header">
+		<img class="love-image"src="image/titledark.png" width="50%" alt="love you">
+	</header>
 <section>
   <h1>Aww, sure..</h1>
   <?php $count=$stmt2->fetch();
