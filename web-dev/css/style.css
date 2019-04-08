@@ -63,7 +63,7 @@ body {
 
   fieldset{
     font-weight:bold;
-    font-size: 30px;
+    font-size: 1.5em;
   }
 
   .header-image{
@@ -106,7 +106,7 @@ body {
   #insertBtn{
   	background-color: #c68375;
     color:white;
-    font-size: 30px;
+    font-size: 1.5em;
     border: 4px solid #343641;
     float: right;
     width: 200px;
