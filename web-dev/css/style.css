@@ -112,7 +112,7 @@ body {
     color:white;
     font-size: 1.25em;
     border: 3px solid #343641;
-    float: right;
+    /*float: right;*/
     width: 40%;
   	box-sizing: border-box;
   }
@@ -161,7 +161,9 @@ body {
   width: 270px;
   height: 60px;
   top: 18%;
-  left: 50%;
+  left: 50%
+
+  ;
 }
 
 #submitbutton{
@@ -178,8 +180,8 @@ body {
 
 .searchImg{
   position: relative;
-  background-image: url("../image/search.svg");
-                    /*url("../image/girl.svg");*/
+  background-image: url("../image/search.svg"),
+                    url("../image/girl.svg");
   background-repeat: no-repeat;
   background-position: center top, 450px 30px;
   background-size: 110% 110%, 110% 110%;
