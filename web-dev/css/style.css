@@ -223,3 +223,10 @@ body {
   background-image: url("../image/letterbg.svg");
   background-repeat: no-repeat;
 }
+
+.letter{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../image/letterbg.svg");
+  background-repeat: no-repeat;
+}

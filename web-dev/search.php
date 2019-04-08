@@ -74,9 +74,11 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		  <?php
 		  while($row=$stmt3->fetch()) {
 		  ?>
-		  <p>name: <?php echo($row["name"]) ?></p>
-		  <p>content: <?php echo($row["content"]) ?></p>
-		<?php } ?>
+			<div class="letter">
+				<p>name: <?php echo($row["name"]) ?></p>
+			  <p>content: <?php echo($row["content"]) ?></p>
+			<?php } ?>
+			</div>
 		</div>
 </div>
 </body>
