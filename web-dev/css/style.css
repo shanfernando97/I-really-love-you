@@ -231,10 +231,13 @@ body {
     display: table;
 }
 #letters{
-  /* color: #ffffff; */
-  background-image: url("../image/letterbg.svg");
-  background-repeat: no-repeat;
-  background-size:contain;
+ width:500px;
+ height:700px;
+ background:url('../image/letterbg.svg')no-repeat;
+ float:left;
+ margin-left:100px;
+ margin-top:25px;
+position:relative;
 }
 
 .letter{

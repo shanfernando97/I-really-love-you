@@ -55,12 +55,23 @@ $stmt->execute();
 		<?php
 		while($row=$stmt->fetch()) {
 		?>
-		<p>name: <?php echo($row["name"]) ?></p>
-		<p>content: <?php echo($row["content"]) ?></p>
-		<p>from: <?php echo($row["fromName"]) ?></p>
+		<div style="width:500px;height:700px;background:url('image/letterbg.svg')no-repeat;float:left;margin-left:100px;margin-top:25px;position:relative;">
+		<p style="font-size:35px;margin-left:20px;margin-top:20px;">name: <?php echo($row["name"]) ?></p>
+		<p style="font-size:20px;margin-left:20px;margin-top:20px;">content: <?php echo($row["content"]) ?></p>
+		<p style="font-size:20px;margin-left:20px;margin-top:20px;">from: <?php echo($row["fromName"]) ?></p>
+		<div class="letter-stats">
+						<input id="letterID" type="number" name="letterID" value="<?php echo($row["id"]) ?>" hidden=true>
+						<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
+						<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
 
+						<input id="like" style="position:absolute;top: 500px;left: 55px;width:60px;"type="image"style="width:60px;" src="image/like1.svg" value="<?php echo($row["id"]) ?>">
+						<p id="numLikes"style="position:absolute;top: 510px;left:130px;font-size:35px;"><?php echo($row["likes"]) ?></p>
+						<input id="poop" style="position:absolute;top:500px;left: 200px;width:60px;"type="image" style="width:60px;"src="image/poop1.svg">
+						<p id="numPoops"style="position:absolute;top: 510px;left:275px;font-size:35px;"><?php echo($row["poop"]) ?></p>
+					</div>
+			</div>
 	<?php } ?>
 	</div>
-
+<script src="js/like.js" charset="utf-8"></script>
 </body>
 </html>
