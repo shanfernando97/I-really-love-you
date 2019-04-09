@@ -1,8 +1,9 @@
 console.log("js connected");
 
-var insertBtn = document.getElementById('insert')
-insertBtn.addEventListener("click",insertFunction,false);
+var insertBtn = document.getElementById('letter')
+insertBtn.addEventListener("submit",insertFunction,false);
 function insertFunction(e){
+e.preventDefault();
   var myRequest = new XMLHttpRequest;
 	myRequest.onreadystatechange = function(){
   if(myRequest.readyState === 4){
@@ -33,9 +34,28 @@ function insertFunction(e){
 
 
 
-function saveForm(){
-　　$('.form-group').ajaxSubmit(function() {
- alert("Your letter has been sent successfully");
-　　});
-　　return false; //阻止表单默认提交
-}
+// function saveForm(){
+// 　　$('.form-group').ajaxSubmit(function() {
+//  alert("Your letter has been sent successfully");
+// 　　});
+// 　　return false;
+// }
+
+$.ajax({
+               url: 'insertLetter.php',
+               type: 'POST',
+
+               success: function (response) {
+
+                   console.log(response);
+                   $(".modal-body").html("Your letter has been sent successfully");
+                   $("#name").val(null);
+                   $("#content").val(null);
+                   $("#fromName").val(null);
+
+               },
+               error: function (response) {
+
+                   $(".modal-body").html("Sorry, try again");
+               }
+           });

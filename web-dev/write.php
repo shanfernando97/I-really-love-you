@@ -36,6 +36,26 @@
   </header>
 
     <img class="arrowbutton"src="image/arrowdown.svg" width="2%" alt="arrowbutton">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
     <form id="letter">
   		<fieldset class="form-group">
         Hey, <input id="name" class="exampleFormControlTextarea1" type="text" name="name" placeholder="write his/her name" required /><br>
@@ -43,7 +63,7 @@
     		<!-- <input id="content" type="textbox" name="content" placeholder="Your love letter" required/><br> -->
         <textarea class="form-control exampleFormControlTextarea1" id="content" name="content" form="letter" rows="8" cols="80" placeholder="Your love letter (max.250)" maxlength="250" required></textarea><br>
         Sincerely, <p><input id="fromName" class="exampleFormControlTextarea1" type="text" name="fromName" placeholder="Write your name (optional)"/></p>
-        <input id="insert" type="submit"  class="btn insertBtn" value="Post">
+        <input id="insert" type="submit"  class="btn insertBtn" value="Post" data-toggle="modal" data-target="#exampleModal">
       </fieldset>
   	</form>
     <img class="boy-image"src="image/boy.svg"  alt="boy">
