@@ -6,8 +6,6 @@ $('document').ready(function () {
   likeButton.addEventListener("click",likeFunction,false);
   function likeFunction(e){
     console.log(e);
-    var id = document.getElementById('letter').dataset.id;
-    console.log(id);
     pressed = true;
     var myRequest = new XMLHttpRequest;
   	myRequest.onreadystatechange = function(){
