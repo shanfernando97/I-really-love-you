@@ -29,3 +29,13 @@ function insertFunction(e){
     // document.body.appendChild(ty);
     console.log("SENT");
 };
+
+
+
+
+function saveForm(){
+　　$('.form-group').ajaxSubmit(function() {
+ alert("Your letter has been sent successfully");
+　　});
+　　return false; //阻止表单默认提交
+}
