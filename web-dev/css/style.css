@@ -211,10 +211,12 @@ body {
 }
 
 #yearesult img.yea{
+
+
    width: 40%;
    margin-right: auto;
- 	 margin-left: auto;
- 	 display: table;
+ 	margin-left: auto;
+ 	display: table;
 
 }
   .serch-image{
@@ -227,49 +229,50 @@ body {
   margin-right: auto;
     margin-left: auto;
     display: table;
+
 }
-#letters{
- width:300px;
- height:500px;
- background:url('../image/letterbg.svg')no-repeat;
- float:left;
- margin-left:80px;
- margin-top:35px;
+
+
+#centerletter{
+ display: grid;
+ padding: 500px;
+ grid-gap:0px;
+ /*grid-column-gap: 50px;*/
+ grid-template-columns: auto auto auto auto;
  position:relative;
 }
 
+#letters{
+width:300px;
+height:500px;
+background:url('../image/letterbg.svg')no-repeat;
+float:left;
+margin-left:50px;
+margin-top:35px;
+position:relative;
+}
+
 .showletters{
-  margin-right: 25%;
-  margin-left: 25%;
+ margin-right: 25%;
+ margin-left: 25%;
 
 }
 
-.letter{
 
-
-}
 .letter .letter-stats{
-  width: 1.5%;
+ width: 1.5%;
 }
 
 .showletterssearch{
+ margin-right: auto;
+ margin-left: auto;
+ display: table;
+}
+
+//funpage
+#funjack{
   margin-right: auto;
-    margin-left: auto;
-    display: table;
-}
+  margin-left: auto;
+  display: table;
 
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
 }
