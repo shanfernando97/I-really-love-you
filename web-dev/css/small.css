@@ -15,11 +15,16 @@
   	height: 300px!important;
   }
 
+  .form-group{
+  	margin-right: 5%;
+  	margin-left: 5%
+  }
+
 
   /*wonder*/
 
   .insertBtn{
-  	float: right;
+  	/*float: right;*/
   }
 
   .searchImg{

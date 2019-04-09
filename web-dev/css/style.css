@@ -78,12 +78,17 @@ body {
 
   .boy-image{
   	position:absolute;
-    width:800px;
-	  margin-left: 56%;
+    width:600px;
+	  margin-left: 63%;
 	  margin-top: -650px;
     height:auto;
     display:block;
 	  z-index: -1;
+  }
+
+  .arrowbutton{
+    float: right;
+
   }
 
   form{
