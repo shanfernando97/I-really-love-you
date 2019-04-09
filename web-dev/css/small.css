@@ -2,9 +2,9 @@
 
  /*write*/
 .boy-image{
-    width: 150px;
-	margin-left: 58%;
-	margin-top: -540px;
+    width: 130px;
+	margin-left: 60%;
+	margin-top: -620px;
   }
 
   .love-image{
@@ -17,45 +17,42 @@
 
 
   /*wonder*/
-  .serch-image{
-  	width:80%;
+
+  .insertBtn{
+  	float: right;
   }
 
-  /*#insertBtn{
-  	float: inherit;
-  	margin-right: auto;
-    margin-left: auto;
+  .searchImg{
+  position: relative;  
+  background-image: url("../image/search.svg"),
+                    url("../image/girl.svg");
+  background-repeat: no-repeat;
+  background-position: center top, 120px 0px;
+  background-size: 110% 110%, 45% 45%;
+}
 
-  }
-*/
 
-.wonderform{
+ .wonderform{
   padding-top: 0em;
   padding-bottom: 22em;
 }
-  #searchname{
-  float: inherit;
-  width: 200px;
+ #searchname{
+  width: 150px;
   height: 40px;
-  top: 10%;
-  left: 30%;
+  top: 38%;
 }
 
-  /*#submitbutton{
-
-  position:absolute;
+  #submitbutton{
+ 
+  float: right;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  float: inherit;
-  top: 110%;
-  width: 150px;
-
-}*/
-
-  /*.place-input{
-  	margin-top: -100%;
-  }*/
-
+ /* margin-right: auto;
+  margin-left: auto;*/
+  top: 90%;
+  width: 130px;
+   left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 
 /*}*/
