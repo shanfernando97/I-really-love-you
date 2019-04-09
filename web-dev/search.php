@@ -78,7 +78,7 @@
 		  while($row=$stmt3->fetch()) {
 				$id = $row["id"];
 		  ?>
-		  <div class="showletters showletterssearch">
+		  <div class=" showletterssearch">
 			<div id="letter" class="letter" data-id="<?php echo($row["id"])?>">
 				<div id="letters">
 				<p style="font-size:35px; margin-left:20px; margin-top:20px; ">Dear, <?php echo($row["name"]) ?></p>
@@ -89,10 +89,10 @@
 						<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
 						<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
 
-						<input id="like" style="position:absolute;top: 250px;left: 55px;width:35px;" type="image" src="image/like1.svg" value="<?php echo($row["id"]) ?>">
-						<p id="numLikes" style="position:absolute;top: 260px;left:130px;font-size:20px;"><?php echo($row["likes"]) ?></p>
-						<input id="poop"  style="position:absolute;top:250px;left: 200px;width:35px;"type="image" src="image/poop1.svg">
-						<p id="numPoops" style="position:absolute;top: 260px;left:275px;font-size:20px;"><?php echo($row["poop"]) ?></p>
+						<input id="like" style="position:absolute;top: 250px;left: 35px;width:35px;" type="image" src="image/like1.svg" value="<?php echo($row["id"]) ?>">
+						<p id="numLikes" style="position:absolute;top: 260px;left:80px;font-size:20px;"><?php echo($row["likes"]) ?></p>
+						<input id="poop"  style="position:absolute;top:250px;left: 180px;width:35px;"type="image" src="image/poop1.svg">
+						<p id="numPoops" style="position:absolute;top: 260px;left:225px;font-size:20px;"><?php echo($row["poop"]) ?></p>
 					</div>
 			</div>
 			<?php } ?>
