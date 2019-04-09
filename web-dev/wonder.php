@@ -26,22 +26,22 @@
 		<ul class="nav justify-content-end">
 			<li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="write.php">Write</a></li>
 			<li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="wonder.php">I Wonder</a></li>
-			<li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="index.php">Fun Stuff</a></li>
+			<li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="pretendToBeFun.html">Fun Stuff</a></li>
 		</ul>
 		</nav>
 		<img class="header-image"src="image/header.svg"  alt="header">
 		<img class="love-image"src="image/titledark.png" width="50%" alt="love you">
 	</header>
     <div class="searchImg">
-	
+
 	<form class = "wonderform" action="search.php" method="POST">
 		<input id = "searchname" type="text" name="search" placeholder="White his/her name" required />
 		<!-- <input id = "submitbutton" class="btn insertBtn" type="submit" name=""  value="Find out"> -->
 		<input id = "submitbutton" class="btn insertBtn" type="submit" name=""  value="Find out">
 	</form>
-	
+
 </div>
-		
+
 
 
 </body>
