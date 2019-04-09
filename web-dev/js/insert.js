@@ -8,7 +8,7 @@ e.preventDefault();
 	myRequest.onreadystatechange = function(){
   if(myRequest.readyState === 4){
     //var responseObj = JSON.parse(myRequest.responseText);
-    console.log(myRequest.responseText);
+    //console.log(myRequest.responseText);
     }
   };
 
@@ -29,6 +29,24 @@ e.preventDefault();
     // ty.innerHTML = "Your love letter has been posted."
     // document.body.appendChild(ty);
     console.log("SENT");
+    $.ajax({
+                   url: 'insertLetter.php',
+                   method: 'POST',
+
+                   success: function (response) {
+
+                       console.log("YEP");
+                       $(".modal-body").html("Your letter has been sent successfully");
+                       $("#name").val(null);
+                       $("#content").val(null);
+                       $("#fromName").val(null);
+
+                   },
+                   error: function (response) {
+                     console.log("NOPE")
+                       $(".modal-body").html("Sorry, try again");
+                   }
+               });
 };
 
 
@@ -40,22 +58,3 @@ e.preventDefault();
 // 　　});
 // 　　return false;
 // }
-
-$.ajax({
-               url: 'insertLetter.php',
-               type: 'POST',
-
-               success: function (response) {
-
-                   console.log(response);
-                   $(".modal-body").html("Your letter has been sent successfully");
-                   $("#name").val(null);
-                   $("#content").val(null);
-                   $("#fromName").val(null);
-
-               },
-               error: function (response) {
-
-                   $(".modal-body").html("Sorry, try again");
-               }
-           });
