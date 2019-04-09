@@ -211,12 +211,10 @@ body {
 }
 
 #yearesult img.yea{
-
-
    width: 40%;
    margin-right: auto;
- 	margin-left: auto;
- 	display: table;
+ 	 margin-left: auto;
+ 	 display: table;
 
 }
   .serch-image{
@@ -231,18 +229,30 @@ body {
     display: table;
 }
 #letters{
- width:500px;
- height:700px;
+ width:300px;
+ height:500px;
  background:url('../image/letterbg.svg')no-repeat;
  float:left;
- margin-left:100px;
- margin-top:25px;
-position:relative;
+ margin-left:80px;
+ margin-top:35px;
+ position:relative;
+}
+
+.showletters{
+  margin-right: 25%;
+  margin-left: 25%;
 }
 
 .letter{
 
+
 }
 .letter .letter-stats{
   width: 1.5%;
+}
+
+.showletterssearch{
+  margin-right: auto;
+    margin-left: auto;
+    display: table;
 }
