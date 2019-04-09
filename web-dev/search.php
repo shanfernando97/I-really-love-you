@@ -85,14 +85,14 @@
 			  <p style="font-size:20px; margin-left:20px; margin-top:20px; "><?php echo($row["content"]) ?></p>
 				<p style="font-size:20px;margin-left:20px; margin-top:20px; ">From, <?php echo($row["fromName"]) ?></p>
 					<div class="letter-stats">
-						<input id="letterID" type="number" name="letterID" value="<?php echo($row["id"]) ?>" hidden=true>
 						<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
 						<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
 
-						<input id="like" style="position:absolute;top: 250px;left: 35px;width:35px;" type="image" src="image/like1.svg" value="<?php echo($row["id"]) ?>">
-						<p id="numLikes" style="position:absolute;top: 260px;left:80px;font-size:20px;"><?php echo($row["likes"]) ?></p>
-						<input id="poop"  style="position:absolute;top:250px;left: 180px;width:35px;"type="image" src="image/poop1.svg">
-						<p id="numPoops" style="position:absolute;top: 260px;left:225px;font-size:20px;"><?php echo($row["poop"]) ?></p>
+						<input data-id="<?php echo($row["id"]) ?>" class="like" style="position:absolute;top: 250px;left: 35px;width:35px;"type="image"style="width:50px;" src="image/like1.svg">
+						<p class="numLikes" id="numLikes" style="position:absolute;top: 260px;left:80px;font-size:20px;"><?php echo($row["likes"]) ?></p>
+
+						<input data-id="<?php echo($row["id"]) ?>" class="poop" style="position:absolute;top:250px;left: 180px;width:35px;"type="image" style="width:50px;"src="image/poop1.svg">
+						<p class="numPoops" id="numPoops" style="position:absolute;top: 260px;left:225px;font-size:20px;"><?php echo($row["poop"]) ?></p>
 					</div>
 			</div>
 			<?php } ?>
