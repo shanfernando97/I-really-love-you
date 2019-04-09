@@ -72,6 +72,8 @@
 		</section>
 	<?php } ?>
 
+<div id="centerletter">
+
 
 		  <?php
 		  while($row=$stmt3->fetch()) {
@@ -95,6 +97,7 @@
 					</div>
 			</div>
 			<?php } ?>
+			</div>
 </div>
 </div>
 <script src="js/like.js" charset="utf-8"></script>

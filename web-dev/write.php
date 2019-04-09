@@ -44,7 +44,7 @@ $stmt->execute();
     <ul class="nav justify-content-end">
       <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="write.php">Write</a></li>
       <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="wonder.php">I Wonder</a></li>
-      <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="index.php">Fun Stuff</a></li>
+      <li  class="nav-item"><a class="nav-link btn btn-outline-primary" href="pretendToBeFun.html">Fun Stuff</a></li>
     </ul>
     </nav>
     <img class="header-image"src="image/header.svg" width="100%" alt="header">
