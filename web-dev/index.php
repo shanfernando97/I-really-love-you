@@ -67,8 +67,8 @@ $stmt->execute();
 						<input data-id="<?php echo($row["id"]) ?>" class="like" style="position:absolute;top: 250px;left: 35px;width:35px;"type="image"style="width:50px;" src="image/like1.svg">
 						<p class="numLikes" id="numLikes" style="position:absolute;top: 260px;left:80px;font-size:20px;"><?php echo($row["likes"]) ?></p>
 
-						<input class="poop" style="position:absolute;top:250px;left: 180px;width:35px;"type="image" style="width:50px;"src="image/poop1.svg">
-						<p class="numPoops"style="position:absolute;top: 260px;left:225px;font-size:20px;"><?php echo($row["poop"]) ?></p>
+						<input data-id="<?php echo($row["id"]) ?>" class="poop" style="position:absolute;top:250px;left: 180px;width:35px;"type="image" style="width:50px;"src="image/poop1.svg">
+						<p class="numPoops" id="numPoops" style="position:absolute;top: 260px;left:225px;font-size:20px;"><?php echo($row["poop"]) ?></p>
 					</div>
 			</div>
 	<?php } ?>

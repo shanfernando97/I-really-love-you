@@ -37,7 +37,14 @@ $('document').ready(function () {
     var likeIcon = target.attributes[4].value = "image/like2.svg";
   })
 
+
   $('.poop').on('click',function (e) {
+    console.log(e);
+    var target = e.currentTarget;
+    var id = target.dataset.id;
+    //var id = document.getElementById('letterID').dataset.id;
+    //console.log(id);
+    pressed = true;
     var myRequest = new XMLHttpRequest;
   	myRequest.onreadystatechange = function(){
     if(myRequest.readyState === 4){
@@ -46,15 +53,23 @@ $('document').ready(function () {
       }
     };
 
-    var letterID = document.getElementById("letterID").value;
-    var poops = document.getElementById("poops").value;
-    console.log(letterID);
+    //var letterID = document.getElementById("letterID").value;
+    //var likes = document.getElementById("likes").value;
+    var poop = target.nextElementSibling.innerHTML;
+    //var likes = parseInt(likes);
+    console.log(poop);
+    //console.log(letterID);
     myRequest.open("POST", "poop.php", true); //true means it is asynchronous // Send urls through the url
     myRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    myRequest.send("letterID="+letterID+"&poops="+poops);
+    myRequest.send("letterID="+id+"&poops="+poop);
 
-    var poop = document.getElementsByClassName("poop");
-    poop.src = "image/poop2.svg";
-    document.getElementById("numPoops").innerHTML = parseInt(poops)+1;
+
+     //var like = document.getElementById("letterID");
+    //console.log(likeIcon);
+    //$('.like').attr("src","image/like2.svg");
+    var numPoops = target.nextElementSibling.innerHTML = parseInt(poop)+1;
+    //var numLikes = parseInt(likes)+1;
+    //$('.numLikes').attr("innerHTML",parseInt(likes)+1);
+    var poopIcon = target.attributes[4].value = "image/poop2.svg";
   })
 });
