@@ -78,9 +78,9 @@
 		  while($row=$stmt3->fetch()) {
 				$id = $row["id"];
 		  ?>
-		  <div class=" showletterssearch">
-			<div id="letter" class="letter" data-id="<?php echo($row["id"])?>">
-				<div id="letters">
+		  <div class="showletters showletterssearch">
+			<div id="letter"  data-id="<?php echo($row["id"])?>">
+				<div id="letters" class="letter">
 				<p style="font-size:35px; margin-left:20px; margin-top:20px; ">Dear, <?php echo($row["name"]) ?></p>
 			  <p style="font-size:20px; margin-left:20px; margin-top:20px; "><?php echo($row["content"]) ?></p>
 				<p style="font-size:20px;margin-left:20px; margin-top:20px; ">From, <?php echo($row["fromName"]) ?></p>
