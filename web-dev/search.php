@@ -78,7 +78,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		  while($row=$stmt3->fetch()) {
 				$id = $row["id"];
 		  ?>
-			<div class="letter">
+			<div id="letter" class="letter" data-id="<?php echo($row["id"])?>">
 				<p>Dear, <?php echo($row["name"]) ?></p>
 			  <p><?php echo($row["content"]) ?></p>
 				<p>From, <?php echo($row["fromName"]) ?></p>
