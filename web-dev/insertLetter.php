@@ -15,6 +15,4 @@ $stmt = $pdo->prepare("INSERT INTO `letters` (`id`, `name`,`content`,`fromName`,
                         VALUES (NULL,'$name','$content','$fromName',0,0); ");
 
 $stmt->execute();
-
-echo("Yo");
 ?>
