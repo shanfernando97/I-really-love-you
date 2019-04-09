@@ -62,36 +62,38 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		   $name=$stmt->fetch(); ?>
 			 <?php
 			 if ($count[0]==0) {
-			 	?><img class="yea" src="image/nah.svg" alt="nah" ><?php
+			 	?><img class="yea" src="image/nah.svg" alt="nah" >
+				<button type="button" class="insertBtn" >Back</button><?php
+
 			} else {
 			 ?>
 			 <img class="yea" src="image/yea.svg" alt="yes" >
 		  <div id="textresult">There is/are <h3><?php echo($count[0]) ?></h3> love letter(s) for <h3><?php echo($name["name"]) ?></h3></div>
+			<button type="button" class="insertBtn" >Back</button>
 		</section>
 	<?php } ?>
 
 		<div id="letters">
 		  <?php
 		  while($row=$stmt3->fetch()) {
+				$id = $row["id"];
 		  ?>
-			<div class="letter" id="letter-stats" data-id="<?php echo($row["id"]) ?>">
+			<div id="letter" class="letter" data-id="<?php echo($row["id"])?>">
 				<p>Dear, <?php echo($row["name"]) ?></p>
 			  <p><?php echo($row["content"]) ?></p>
 				<p>From, <?php echo($row["fromName"]) ?></p>
-				<a href="search.php?letterID=<?php echo($row["id"]) ?>">aasas</a>
 					<div class="letter-stats">
 						<input id="letterID" type="number" name="letterID" value="<?php echo($row["id"]) ?>" hidden=true>
 						<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
 						<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
 
-						<input id="like" type="image" src="image/like1.svg">
+						<input id="like" type="image" src="image/like1.svg" value="<?php echo($row["id"]) ?>">
 						<p id="numLikes"><?php echo($row["likes"]) ?></p>
 						<input id="poop" type="image" src="image/poop1.svg">
 						<p id="numPoops"><?php echo($row["poop"]) ?></p>
 					</div>
-			<?php } ?>
 			</div>
-		</div>
+			<?php } ?>
 </div>
 <script src="js/like.js" charset="utf-8"></script>
 </body>
