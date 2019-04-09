@@ -56,9 +56,9 @@ $stmt->execute();
 		while($row=$stmt->fetch()) {
 		?>
 		<div style="width:300px;height:500px;background:url('image/letterbg.svg')no-repeat;float:left;margin-left:100px;margin-top:25px;position:relative;">
-		<p style="font-size:35px;margin-left:20px;margin-top:20px;">name: <?php echo($row["name"]) ?></p>
-		<p style="font-size:20px;margin-left:20px;margin-top:20px;">content: <?php echo($row["content"]) ?></p>
-		<p style="font-size:20px;margin-left:20px;margin-top:20px;">from: <?php echo($row["fromName"]) ?></p>
+		<p style="font-size:35px;margin-left:20px;margin-top:20px;">Dear, <?php echo($row["name"]) ?></p>
+		<p style="font-size:20px;margin-left:20px;margin-top:20px;"><?php echo($row["content"]) ?></p>
+		<p style="font-size:20px;margin-left:20px;margin-top:20px;">- <?php echo($row["fromName"]) ?></p>
 		<div class="letter-stats">
 
 						<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
