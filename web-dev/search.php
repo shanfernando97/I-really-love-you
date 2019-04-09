@@ -63,13 +63,13 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 			 <?php
 			 if ($count[0]==0) {
 			 	?><img class="yea" src="image/nah.svg" alt="nah" >
-				<button type="button" class="insertBtn" >Back</button><?php
+				<a href="wonder.php"><button type="button" class="insertBtn btnback"  >Back</button></a><?php
 
 			} else {
 			 ?>
 			 <img class="yea" src="image/yea.svg" alt="yes" >
 		  <div id="textresult">There is/are <h3><?php echo($count[0]) ?></h3> love letter(s) for <h3><?php echo($name["name"]) ?></h3></div>
-			<button type="button" class="insertBtn" >Back</button>
+			<a href="wonder.php"><button type="button" class="insertBtn btnback" >Back</button></a>
 		</section>
 	<?php } ?>
 

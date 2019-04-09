@@ -225,6 +225,11 @@ body {
   	display: table;
   }
 
+.btnback{
+  margin-right: auto;
+    margin-left: auto;
+    display: table;
+}
 #letters{
   /* color: #ffffff; */
   background-image: url("../image/letterbg.svg");

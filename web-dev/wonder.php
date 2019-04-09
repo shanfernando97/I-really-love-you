@@ -33,7 +33,7 @@
 		<img class="love-image"src="image/titledark.png" width="50%" alt="love you">
 	</header>
     <div class="searchImg">
-	<!-- <img class="serch-image"src="image/search.svg" width="50%" alt="search"> -->
+	
 	<form class = "wonderform" action="search.php" method="POST">
 		<input id = "searchname" type="text" name="search" placeholder="White his/her name" required />
 		<!-- <input id = "submitbutton" class="btn insertBtn" type="submit" name=""  value="Find out"> -->
