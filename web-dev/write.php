@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    
+
     <header>
 
     <nav  class="navbar navbar-light ">
@@ -47,7 +47,7 @@
       </fieldset>
   	</form>
     <img class="boy-image"src="image/boy.svg"  alt="boy">
-    
+
 
 
 
