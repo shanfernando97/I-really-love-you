@@ -1,3 +1,19 @@
+<?php
+//session_start();
+//$id = $_GET['id'];
+
+$dsn = "mysql:host=localhost;dbname=mcphesto_iloveyou;charset=utf8mb4";
+$dbusername = "mcphesto_imm";
+$dbpassword = "nhXZ9reEzWuQ";
+
+
+$pdo = new PDO($dsn, $dbusername, $dbpassword);
+
+$stmt = $pdo->prepare("SELECT * FROM `letters`");
+
+$stmt->execute();
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -67,6 +83,32 @@
       </fieldset>
   	</form>
     <img class="boy-image"src="image/boy.svg"  alt="boy">
+
+    <div class = "showletters">
+    	<div class = "letters">
+    		<!-- <h4>Love Letters</h4> -->
+    		<?php
+    		while($row=$stmt->fetch()) {
+    		?>
+    		<div style="width:300px;height:500px;background:url('image/letterbg.svg')no-repeat;float:left;margin-left:100px;margin-top:25px;position:relative;">
+    		<p style="font-size:35px;margin-left:20px;margin-top:20px;">name: <?php echo($row["name"]) ?></p>
+    		<p style="font-size:20px;margin-left:20px;margin-top:20px;">content: <?php echo($row["content"]) ?></p>
+    		<p style="font-size:20px;margin-left:20px;margin-top:20px;">from: <?php echo($row["fromName"]) ?></p>
+    		<div class="letter-stats">
+
+    						<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
+    						<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
+
+    						<input data-id="<?php echo($row["id"]) ?>" class="like" style="position:absolute;top: 250px;left: 35px;width:35px;"type="image"style="width:50px;" src="image/like1.svg">
+    						<p class="numLikes" id="numLikes" style="position:absolute;top: 260px;left:80px;font-size:20px;"><?php echo($row["likes"]) ?></p>
+
+    						<input data-id="<?php echo($row["id"]) ?>" class="poop" style="position:absolute;top:250px;left: 180px;width:35px;"type="image" style="width:50px;"src="image/poop1.svg">
+    						<p class="numPoops" id="numPoops" style="position:absolute;top: 260px;left:225px;font-size:20px;"><?php echo($row["poop"]) ?></p>
+    					</div>
+    			</div>
+    	<?php } ?>
+    	</div>
+    	</div>
 
   <script src="js/insert.js" charset="utf-8"></script>
   <script src="js/hide-write.js" type="text/javascript" charset="utf-8"></script>
