@@ -99,6 +99,9 @@
 
 	            <?php } ?>
 	            </div>
+
+<script src="js/insert.js" charset="utf-8"></script>
 <script src="js/like.js" charset="utf-8"></script>
+<script src="js/hide-write.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
