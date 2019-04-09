@@ -49,13 +49,13 @@ $stmt->execute();
 		</nav>
 	</header>
 
-
+<div class = "showletters">
 	<div class = "letters">
 		<h4>Love Letters</h4>
 		<?php
 		while($row=$stmt->fetch()) {
 		?>
-		<div style="width:500px;height:700px;background:url('image/letterbg.svg')no-repeat;float:left;margin-left:100px;margin-top:25px;position:relative;">
+		<div style="width:300px;height:500px;background:url('image/letterbg.svg')no-repeat;float:left;margin-left:100px;margin-top:25px;position:relative;">
 		<p style="font-size:35px;margin-left:20px;margin-top:20px;">name: <?php echo($row["name"]) ?></p>
 		<p style="font-size:20px;margin-left:20px;margin-top:20px;">content: <?php echo($row["content"]) ?></p>
 		<p style="font-size:20px;margin-left:20px;margin-top:20px;">from: <?php echo($row["fromName"]) ?></p>
@@ -64,13 +64,14 @@ $stmt->execute();
 						<input id="likes" type="number" name="likes" value="<?php echo($row["likes"]) ?>" hidden=true>
 						<input id="poops" type="number" name="poops" value="<?php echo($row["poop"]) ?>" hidden=true>
 
-						<input id="like" style="position:absolute;top: 500px;left: 55px;width:60px;"type="image"style="width:60px;" src="image/like1.svg" value="<?php echo($row["id"]) ?>">
-						<p id="numLikes"style="position:absolute;top: 510px;left:130px;font-size:35px;"><?php echo($row["likes"]) ?></p>
-						<input id="poop" style="position:absolute;top:500px;left: 200px;width:60px;"type="image" style="width:60px;"src="image/poop1.svg">
-						<p id="numPoops"style="position:absolute;top: 510px;left:275px;font-size:35px;"><?php echo($row["poop"]) ?></p>
+						<input id="like" style="position:absolute;top: 250px;left: 35px;width:35px;"type="image"style="width:50px;" src="image/like1.svg">
+						<p id="numLikes"style="position:absolute;top: 260px;left:80px;font-size:20px;"><?php echo($row["likes"]) ?></p>
+						<input id="poop" style="position:absolute;top:250px;left: 180px;width:35px;"type="image" style="width:50px;"src="image/poop1.svg">
+						<p id="numPoops"style="position:absolute;top: 260px;left:225px;font-size:20px;"><?php echo($row["poop"]) ?></p>
 					</div>
 			</div>
 	<?php } ?>
+	</div>
 	</div>
 <script src="js/like.js" charset="utf-8"></script>
 </body>
