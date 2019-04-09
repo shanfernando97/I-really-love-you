@@ -260,17 +260,17 @@ position:relative;
 
 
 .letter .letter-stats{
- /*width: 1.5%;*/
+ width: 1.5%;
 }
 
 .showletterssearch{
- margin-right: auto;
+ margin-right: autso;
  margin-left: auto;
  display: table;
 }
 
 //funpage
-#funjack{
+.funjack{
   margin-right: auto;
   margin-left: auto;
   display: table;
