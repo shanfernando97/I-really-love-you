@@ -64,7 +64,6 @@
 			 if ($count[0]==0) {
 			 	?><img class="yea" src="image/nah.svg" alt="nah" >
 				<a href="wonder.php"><button type="button" class="insertBtn btnback"  >Back</button></a><?php
-
 			} else {
 			 ?>
 			 <img class="yea" src="image/yea.svg" alt="yes" >

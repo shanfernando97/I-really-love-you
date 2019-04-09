@@ -48,7 +48,7 @@
             </button>
           </div>
           <div class="modal-body">
-            ...
+            WRITE YOUR STUFF DOWN
           </div>
 
         </div>
@@ -68,14 +68,7 @@
   	</form>
     <img class="boy-image"src="image/boy.svg"  alt="boy">
 
-
-  <!-- particles.js container -->
-  <div id="particles-js"></div>
-  <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
-  <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-  <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
-  <script src="js/index.js"></script>
-  <script src="js/insert.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/insert.js" charset="utf-8"></script>
   <script src="js/hide-write.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
