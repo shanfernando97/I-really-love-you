@@ -28,7 +28,7 @@
   }
 
   .searchImg{
-  position: relative;  
+  position: relative;
   background-image: url("../image/search.svg"),
                     url("../image/girl.svg");
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@
 }
 
   #submitbutton{
- 
+
   float: right;
   display: block;
  /* margin-right: auto;
@@ -58,6 +58,12 @@
    left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+
+.letters{
+  margin-right: 5%;
+  margin-left: -90%;
+  display:table;
 }
 
 /*}*/
